@@ -1,17 +1,16 @@
-# Core Django
+# Core Django dependencies
 Django==5.2.6
 django-environ==0.12.0
-whitenoise==6.10.0   # for serving static files
-
-# Web server
 gunicorn==23.0.0
-
-# Image processing
+whitenoise==6.10.0
 pillow==11.3.0
 
-# ML dependencies (if needed)
-numpy>=1.24,<2.3
-torch==2.8.0
-torchvision==0.23.0
-opencv-python==4.12.0.88
-efficientnet_pytorch==0.7.1
+# ML dependencies (CPU only)
+torch==2.2.2+cpu
+torchvision==0.17.2+cpu
+torchaudio==2.2.2+cpu
+-f https://download.pytorch.org/whl/torch_stable.html
+
+# Other dependencies
+numpy==1.26.4
+opencv-python==4.9.0.80
