@@ -1,3 +1,5 @@
 Django
 tensorflow-cpu
 numpy
+gunicorn
+
