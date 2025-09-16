@@ -1,5 +1,6 @@
-Django
-tensorflow-cpu
 numpy
+gunicorn
+Django>=4.2
+tensorflow
 gunicorn
 
