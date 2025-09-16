@@ -1,6 +1,12 @@
-# settings.py
+from pathlib import Path
+import os
 
-# ...existing code...
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+# 🔑 Add your secret key here
+SECRET_KEY = 'djshf87#@fdskjhfsd8f7sdf8@#kjhfd'
+
+# Other settings…
 
 INSTALLED_APPS = [
     # ...existing apps...
