@@ -1,7 +1,5 @@
+numpy==1.25.0 --only-binary=:all:
 Django==5.2.6
 gunicorn==23.0.0
-numpy==1.25.0
-pillow==11.3.0  # if you use image uploads
-whitenoise==6.10.0  # for static files
-torch==2.8.0+cpu  # optional if using PyTorch instead of TensorFlow
-torchvision==0.23.0+cpu  # optional
+pillow==11.3.0
+whitenoise==6.10.0
