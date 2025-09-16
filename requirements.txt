@@ -1,16 +1,17 @@
-# Core Django dependencies
+# Core Django
 Django==5.2.6
 django-environ==0.12.0
+whitenoise==6.10.0   # for serving static files
+
+# Web server
 gunicorn==23.0.0
-whitenoise==6.10.0
+
+# Image processing (if your app uses it)
 pillow==11.3.0
 
-# ML dependencies (CPU only)
-torch==2.2.2+cpu
-torchvision==0.17.2+cpu
-torchaudio==2.2.2+cpu
--f https://download.pytorch.org/whl/torch_stable.html
-
-# Other dependencies
+# Optional ML dependencies (only if your app makes predictions live)
 numpy==1.26.4
-opencv-python==4.9.0.80
+torch==2.8.0
+torchvision==0.23.0
+opencv-python==4.12.0.88
+efficientnet_pytorch==0.7.1
