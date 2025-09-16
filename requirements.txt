@@ -1,17 +1,7 @@
-# Core Django
 Django==5.2.6
-django-environ==0.12.0
-whitenoise==6.10.0   # for serving static files
-
-# Web server
 gunicorn==23.0.0
-
-# Image processing (if your app uses it)
-pillow==11.3.0
-
-# Optional ML dependencies (only if your app makes predictions live)
-numpy==1.26.4
-torch==2.8.0
-torchvision==0.23.0
-opencv-python==4.12.0.88
-efficientnet_pytorch==0.7.1
+numpy==1.25.0
+pillow==11.3.0  # if you use image uploads
+whitenoise==6.10.0  # for static files
+torch==2.8.0+cpu  # optional if using PyTorch instead of TensorFlow
+torchvision==0.23.0+cpu  # optional
